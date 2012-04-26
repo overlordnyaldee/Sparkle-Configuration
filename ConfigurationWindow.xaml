@@ -1,0 +1,54 @@
+﻿<Window x:Class="Sparkle_Configuration.ConfigurationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Configuration Editor" Height="519" Width="856" Loaded="Window_Loaded" Initialized="Window_Initialized">
+    <Grid Width="831">
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="78,12,0,0" Name="textBoxAuth" VerticalAlignment="Top" Width="154" ToolTip="Your bot's auth code." TextChanged="updateLiveEdit_TextChanged" />
+        <Label Content="Auth-Key:" Height="28" HorizontalAlignment="Left" Margin="10,10,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Userid:" Height="28" HorizontalAlignment="Left" Margin="26,44,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="78,46,0,0" Name="textBoxUserID" VerticalAlignment="Top" Width="154" ToolTip="Your bot's user id." TextChanged="updateLiveEdit_TextChanged" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="78,83,0,0" Name="textBoxBotName" VerticalAlignment="Top" Width="154" ToolTip="Your bot's short name (for commands like [name], pm me)" TextChanged="updateLiveEdit_TextChanged" />
+        <Label Content="Bot Name:" Height="28" HorizontalAlignment="Left" Margin="6,81,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Room ID:" Height="28" HorizontalAlignment="Left" Margin="13,118,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="78,120,0,0" Name="textBoxRoomID" VerticalAlignment="Top" Width="154" ToolTip="The room you want your bot to be placed in." TextChanged="updateLiveEdit_TextChanged" />
+        <Label Content="Admin:" Height="28" HorizontalAlignment="Left" Margin="25,152,0,0" Name="label5" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="78,154,0,0" Name="textBoxAdmin" VerticalAlignment="Top" Width="154" ToolTip="User id of the bot administrator, likely you." TextChanged="updateLiveEdit_TextChanged" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="309,46,0,0" Name="textBoxDBUser" VerticalAlignment="Top" Width="120" IsEnabled="False" ToolTip="Your bot's mysql login" TextChanged="updateLiveEdit_TextChanged" />
+        <CheckBox Content="?Use database" Height="16" HorizontalAlignment="Left" Margin="248,15,0,0" Name="checkBoxUseDatabase" VerticalAlignment="Top" UseLayoutRounding="False" FlowDirection="RightToLeft" IsEnabled="True" IsChecked="False" Unchecked="checkBoxUseDatabase_Unchecked" ToolTip="Set to true if you want to use a database, false otherwise." Checked="checkBoxUseDatabase_Checked" />
+        <CheckBox Content="?Log chat" Height="16" HorizontalAlignment="Left" Margin="361,15,0,0" Name="checkBoxLogChat" VerticalAlignment="Top" FlowDirection="RightToLeft" IsEnabled="False" ToolTip="Set to true if you want to log chat, false otherwise" Checked="updateLiveEdit_Changed" Unchecked="updateLiveEdit_Changed" />
+        <Label Content="User:" Height="28" HorizontalAlignment="Left" Margin="268,44,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="Password:" Height="28" HorizontalAlignment="Left" Margin="241,83,0,0" Name="label7" VerticalAlignment="Top" />
+        <Button Content="Advanced database options" Height="25" HorizontalAlignment="Left" Margin="268,118,0,0" Name="buttonAdvancedDBOptions" VerticalAlignment="Top" Width="161" Click="buttonAdvancedDBOptions_Click" />
+        <PasswordBox Height="23" HorizontalAlignment="Left" Margin="309,83,0,0" Name="passwordBoxDBPassword" VerticalAlignment="Top" Width="120" IsEnabled="False" ToolTip="Your bot's mysql login password" GotFocus="updateLiveEdit_Changed" PasswordChanged="updateLiveEdit_Changed" />
+        <CheckBox Content="?Use Lastfm" Height="16" HorizontalAlignment="Left" Margin="25,209,0,0" Name="checkBoxUseLastfm" VerticalAlignment="Top" FlowDirection="RightToLeft" ToolTip=" Set to true to use the last.fm service, false otherwise" Checked="checkBoxUseLastfm_Checked" Unchecked="checkBoxUseLastfm_Unchecked" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="221,206,0,0" Name="textBoxLastfmAPIKey" VerticalAlignment="Top" Width="206" ToolTip="Your last.fm api key. (Obtain an API key at http://www.last.fm/api/ or disable under Flags)" TextChanged="updateLiveEdit_TextChanged" />
+        <Label Content="Lastfm API Key:" Height="28" HorizontalAlignment="Left" Margin="121,204,0,0" Name="label8" VerticalAlignment="Top" />
+        <Label Content="TCP Port:" Height="28" HorizontalAlignment="Left" Margin="154,233,0,0" Name="label9" VerticalAlignment="Top" />
+        <CheckBox Content="?Use TCP" Height="16" HorizontalAlignment="Left" Margin="39,238,0,0" Name="checkBoxUseTCP" VerticalAlignment="Top" FlowDirection="RightToLeft" Checked="checkBoxUseTCP_Checked" Unchecked="checkBoxUseTCP_Unchecked" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="221,235,0,0" Name="textBoxTCPPort" VerticalAlignment="Top" Width="120" TextChanged="updateLiveEdit_TextChanged" />
+        <CheckBox Content="?Use HTTP" Height="16" HorizontalAlignment="Left" Margin="32,296,0,0" Name="checkBoxUseHTTP" VerticalAlignment="Top" FlowDirection="RightToLeft" ToolTip="Set to true to enable HTTP connections, false otherwise" Checked="checkBoxUseHTTP_Checked" Unchecked="checkBoxUseHTTP_Unchecked" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="221,293,0,0" Name="textBoxHTTPPort" VerticalAlignment="Top" Width="120" ToolTip="The port you want to listen on." TextChanged="updateLiveEdit_TextChanged" />
+        <Label Content="HTTP Port:" Height="28" HorizontalAlignment="Left" Margin="146,291,0,0" Name="label10" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="221,322,0,0" Name="textBoxHTTPHostname" VerticalAlignment="Top" Width="120" ToolTip="The host you want to listen on (Use your computer's internal IP" TextChanged="updateLiveEdit_TextChanged" />
+        <Label Content="Host:" Height="28" HorizontalAlignment="Left" Margin="175,320,0,0" Name="label11" VerticalAlignment="Top" />
+        <CheckBox Content="?Log to console" Height="16" HorizontalAlignment="Left" Margin="327,157,0,0" Name="checkBoxLogToConsole" VerticalAlignment="Top" FlowDirection="RightToLeft" Checked="updateLiveEdit_Changed" Unchecked="updateLiveEdit_Changed" ToolTip="Have the bot log events in the console" />
+        <CheckBox Content="?Respond to users" Height="16" HorizontalAlignment="Left" Margin="25,366,0,0" Name="checkBoxRespond" VerticalAlignment="Top" FlowDirection="RightToLeft" Checked="updateLiveEdit_Changed" />
+        <Button Content="Response options" Height="23" HorizontalAlignment="Left" Margin="175,362,0,0" Name="buttonResponseOptions" VerticalAlignment="Top" Width="166" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="221,264,0,0" Name="textBoxTCPHostname" ToolTip="The host you want to listen on (Use your computer's internal IP" VerticalAlignment="Top" Width="120" TextChanged="updateLiveEdit_TextChanged" />
+        <Label Content="Host:" Height="28" HorizontalAlignment="Left" Margin="175,262,0,0" Name="label12" VerticalAlignment="Top" />
+        <TextBox Height="424" HorizontalAlignment="Left" Margin="445,44,0,0" Name="textBoxJSON" VerticalAlignment="Top" Width="374" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Visible" BorderThickness="2" LostFocus="textBoxJSON_LostFocus" />
+        <Label Content="Live Edit:" Height="28" HorizontalAlignment="Left" Margin="445,10,0,0" Name="label13" VerticalAlignment="Top" />
+        <Button Content="Save" Height="23" HorizontalAlignment="Left" Margin="30,438,0,0" Name="buttonSave" VerticalAlignment="Top" Width="75" Click="buttonSave_Click" />
+        <Button Content="Save As..." Height="23" HorizontalAlignment="Left" Margin="111,438,0,0" Name="buttonSaveAs" VerticalAlignment="Top" Width="75" Click="buttonSaveAs_Click" />
+        <Button Content="Revert" Height="23" HorizontalAlignment="Left" Margin="192,438,0,0" Name="buttonRevert" VerticalAlignment="Top" Width="75" Click="buttonRevert_Click" />
+        <Label Content="Bonus Vote Method:" Height="28" HorizontalAlignment="Left" Margin="20,400,0,0" Name="label14" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="146,400,0,0" Name="comboBoxBonusVote" VerticalAlignment="Top" Width="120" ToolTip="The bot can awesome songs in one of five modes: NONE, VOTE, CHAT, DICE, AUTO.">
+            <ComboBoxItem Content="NONE" />
+            <ComboBoxItem Content="VOTE" />
+            <ComboBoxItem Content="CHAT" />
+            <ComboBoxItem Content="DICE" />
+            <ComboBoxItem Content="AUTO" />
+        </ComboBox>
+        <CheckBox Content="?Auto-rejoin" Height="16" HorizontalAlignment="Right" Margin="0,405,404,0" Name="checkBoxAutorejoin" VerticalAlignment="Top" FlowDirection="RightToLeft" ToolTip="Have the bot rejoin if booted" />
+    </Grid>
+</Window>

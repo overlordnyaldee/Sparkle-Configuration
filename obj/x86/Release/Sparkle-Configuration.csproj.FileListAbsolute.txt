@@ -1,0 +1,16 @@
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\bin\Release\Sparkle-Configuration.exe.config
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\bin\Release\Sparkle-Configuration.exe
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\bin\Release\Sparkle-Configuration.pdb
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\MainWindow.baml
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\ConfigurationWindow.baml
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\MainWindow.g.cs
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\ConfigurationWindow.g.cs
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\App.g.cs
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\Sparkle-Configuration_MarkupCompile.cache
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\Sparkle-Configuration.g.resources
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\Sparkle_Configuration.Properties.Resources.resources
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\Sparkle-Configuration.exe
+C:\Users\overlordnyaldee\Documents\Visual Studio 2010\Projects\Sparkle-Configuration\Sparkle-Configuration\obj\x86\Release\Sparkle-Configuration.pdb

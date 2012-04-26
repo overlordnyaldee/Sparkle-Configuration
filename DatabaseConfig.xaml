@@ -1,0 +1,20 @@
+﻿<Window x:Class="Sparkle_Configuration.DatabaseConfig"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Adbvanced Database Options" Height="265" Width="305" Closing="Window_Closing" WindowStyle="ToolWindow" ShowInTaskbar="False" IsVisibleChanged="Window_IsVisibleChanged">
+    <Grid Width="278" Height="228">
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="80,14,0,0" Name="textBoxDatabase" VerticalAlignment="Top" Width="120" TextChanged="textBoxDatabase_TextChanged" ToolTip="The name of your mysql database." />
+        <Label Content="Database:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <Grid Height="172" HorizontalAlignment="Left" Margin="12,46,0,0" Name="grid1" VerticalAlignment="Top" Width="231">
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="81,34,0,0" Name="textBoxSong" VerticalAlignment="Top" Width="120" TextChanged="textBoxDatabase_TextChanged" ToolTip="The name of your song table." />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="81,63,0,0" Name="textBoxChat" VerticalAlignment="Top" Width="120" TextChanged="textBoxDatabase_TextChanged" ToolTip="The name of your chatlog table (name this even if you have logchat set to false)" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="81,92,0,0" Name="textBoxUser" VerticalAlignment="Top" Width="120" TextChanged="textBoxDatabase_TextChanged" ToolTip="The name of your userlist table." />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="81,121,0,0" Name="textBoxHoliday" VerticalAlignment="Top" Width="120" TextChanged="textBoxDatabase_TextChanged" ToolTip="The name of your holiday greeting table" />
+            <Label Content="Song:" Height="28" HorizontalAlignment="Left" Margin="35,32,0,0" Name="label3" VerticalAlignment="Top" />
+            <Label Content="Chat:" Height="28" HorizontalAlignment="Left" Margin="38,61,0,0" Name="label4" VerticalAlignment="Top" />
+            <Label Content="User:" Height="28" HorizontalAlignment="Left" Margin="39,90,0,0" Name="label5" VerticalAlignment="Top" />
+            <Label Content="Holiday:" Height="28" HorizontalAlignment="Left" Margin="22,119,0,0" Name="label6" VerticalAlignment="Top" />
+        </Grid>
+        <Label Content="Table Names:" Height="28" HorizontalAlignment="Left" Margin="12,46,0,0" Name="label2" VerticalAlignment="Top" />
+    </Grid>
+</Window>

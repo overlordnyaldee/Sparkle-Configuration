@@ -1,0 +1,22 @@
+﻿<Window x:Class="Sparkle_Configuration.ResponseConfig"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Response Options" Height="166" Width="402" WindowStyle="ToolWindow" ShowInTaskbar="False">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="139" />
+            <ColumnDefinition Width="241*" />
+        </Grid.ColumnDefinitions>
+        <CheckBox Content="?Announce Bonus" Height="16" HorizontalAlignment="Left" Margin="18,12,0,0" Name="checkBoxBonusAnnouce" VerticalAlignment="Top" FlowDirection="RightToLeft" />
+        <CheckBox Content="?Report Song Stats" Height="16" HorizontalAlignment="Left" Margin="12,34,0,0" Name="checkBoxSongStats" VerticalAlignment="Top" FlowDirection="RightToLeft" />
+        <CheckBox Content="?Welcome Users" Height="16" HorizontalAlignment="Left" Margin="26,56,0,0" Name="checkBoxWelcome" VerticalAlignment="Top" FlowDirection="RightToLeft" />
+        <CheckBox Content="?Welcome PM Users" Height="16" HorizontalAlignment="Left" Margin="5,79,0,0" Name="checkBoxWelcomePM" VerticalAlignment="Top" FlowDirection="RightToLeft" />
+        <Label Content="Owner Response:" Height="28" HorizontalAlignment="Left" Margin="13,10,0,0" Name="label1" VerticalAlignment="Top" Grid.Column="1" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="121,12,0,0" Name="textBoxOwner" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+        <Label Content="Rule Description:" Height="28" HorizontalAlignment="Left" Margin="16,42,0,0" Name="label2" VerticalAlignment="Top" Grid.Column="1" />
+        <Label Content="Rule Link:" Height="28" HorizontalAlignment="Left" Margin="55,70,0,0" Name="label3" VerticalAlignment="Top" Grid.Column="1" />
+        <CheckBox Content="?Sing Along" Height="16" HorizontalAlignment="Left" Margin="50,100,0,0" Name="checkBoxSing" VerticalAlignment="Top" FlowDirection="RightToLeft" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="121,42,0,0" Name="textBoxRuleDesc" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="121,72,0,0" Name="textBoxRuleLink" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+    </Grid>
+</Window>
